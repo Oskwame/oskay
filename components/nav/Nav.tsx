@@ -27,22 +27,22 @@ const Nav: React.FC = () => {
         <AiOutlineUser />
       </a>
       <a
-        href="#service"
+        href="#skills"
         className={`p-3 rounded-full flex text-white text-[1.8rem] ${
-          activeNav === "#service" ? "bg-black text-black text-[2rem]" : ""
+          activeNav === "#skills" ? "bg-black text-black text-[2rem]" : ""
         }`}
-        onClick={() => setActiveNav("#service")}
-      >
-        <AiOutlineTool />
-      </a>
-      <a
-        href="#experience"
-        className={`p-3 rounded-full flex text-white text-[1.8rem] ${
-          activeNav === "#experience" ? "bg-black text-[2rem]" : ""
-        }`}
-        onClick={() => setActiveNav("#experience")}
+        onClick={() => setActiveNav("#skills")}
       >
         <AiOutlineBook />
+      </a>
+      <a
+        href="#services"
+        className={`p-3 rounded-full flex text-white text-[1.8rem] ${
+          activeNav === "#services" ? "bg-black text-[2rem]" : ""
+        }`}
+        onClick={() => setActiveNav("#services")}
+      >
+         <AiOutlineTool />
       </a>
       <a
         href="#contact"
