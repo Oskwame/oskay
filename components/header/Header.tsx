@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const Header: React.FC = () => {
   return (
-    <header className="container relative pt-12 lg:h-[50hv] lg:w-[60rem] lg:left-[5%] flex flex-col lg:flex-row items-center justify-center text-white sm:w-[70rem]">
-      <div className="flex flex-col items-center text-center lg:text-left lg:items-start lg:mr-10 md:mr-[17%]">
+    <header className="container relative pt-12 lg:h-[50hv] lg:w-[60rem] lg:left-[5%] flex flex-col lg:flex-row items-center justify-center sm:w-[70rem]">
+      <div className="flex flex-col items-center text-center lg:text-left lg:items-start lg:mr-10 md:mr-[10%]">
         <p className="text-4xl sm:text-5xl md:text-6xl font-mono">Hello Everyone</p>
         <p className="text-5xl sm:text-6xl md:text-7xl mt-4 font-mono font-bold text-blue-200">
           I'm Os_kay
@@ -19,10 +19,10 @@ const Header: React.FC = () => {
           Let's Talk
         </a>
       </div>
-      <div className="  md:mr-[17%] lg:mr-0 lg:ml-[5%]">
-      <div className="w-60 h-60 lg:w-72 lg:h-72 rounded-full bg-white overflow-hidden mt-8 lg:mt-0 ">
+      <div className="  md:mr-[10%] lg:mr-0 lg:ml-[10%]">
+      <div className="w-60 h-60 lg:w-72 lg:h-72 rounded-full bg-white border-blue-400 overflow-hidden mt-8 lg:mt-0 ">
         <Image
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover "
           src="/Profile.png"
           alt="Profile image"
           width={288}
