@@ -5,7 +5,7 @@ import { AiOutlineWhatsApp, AiOutlineGithub, AiOutlineX, AiOutlineLinkedin } fro
 
 const Socials: React.FC = () => {
   return (
-    <div className="lg:fixed top-3 left-2 flex lg:flex-col gap-4 items-center mb-10 xs:justify-center xs:px-2 xs:my-2 sm:justify-center">
+    <div className="lg:fixed top-3 left-2 flex lg:flex-col gap-5 items-center mb-10 xs:justify-center xs:px-2 xs:my-2 sm:justify-center  md:w-[17cm]">
       <Link href="https://x.com/os_kayy" aria-label="X">
         <AiOutlineX className="text-4xl hover:text-blue-400 hover:scale-125 transition-transform duration-300" />
       </Link>
