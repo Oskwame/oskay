@@ -1,9 +1,15 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['drive.google.com'],
-  },/* config options here */
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        pathname: '/dnrygejqn/**', // Replace 'dnrygejqn' with your actual Cloudinary cloud name
+      },
+    ],
+  },
 };
 
 export default nextConfig;

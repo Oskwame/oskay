@@ -23,7 +23,7 @@ const Header: React.FC = () => {
       <div className="w-60 h-60 lg:w-72 lg:h-72 rounded-full bg-white border-blue-400 overflow-hidden mt-8 lg:mt-0 ">
         <Image
           className="w-full h-full object-cover "
-          src="https://drive.google.com/uc?export=view&id=1SFN69sMwx29CriItd10TeN0gyGd2gzIC"
+          src="https://res.cloudinary.com/dnrygejqn/image/upload/v1735751434/Profile_yotgme.png"
           alt="Profile image"
           width={288}
           height={288}
