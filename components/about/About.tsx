@@ -29,7 +29,7 @@ const About: React.FC = () => {
             Experience
           </h5>
           <small className="text-gray-600 text-center block">
-            12 Months Working
+            2 years Working
           </small>
         </article>
 
@@ -39,7 +39,7 @@ const About: React.FC = () => {
           <h5 className="text-lg font-semibold text-center mb-2 text-gray-800 hover:text-white">
             Clients
           </h5>
-          <small className="text-gray-600 text-center block">3+ Clients</small>
+          <small className="text-gray-600 text-center block">4+ Clients</small>
         </article>
 
         {/* Projects */}
@@ -57,14 +57,13 @@ const About: React.FC = () => {
       {/* Description */}
       <div className="max-w-5xl mx-auto px-4">
         <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed text-center">
-          I am a final year computer science student seeking an opportunity as a
-          Front End Developer. Eager to transition into a Full Stack Developer
-          role, I am equipped with additional expertise in Next.js, Supabase,
+          I am an it professional seeking an opportunity as a
+          Front End & fullStack Developer. I am equipped with additional expertise in Next.js, Supabase,
           and PostgreSQL. I am actively seeking a challenging position in a
           dynamic and collaborative environment, where I can leverage my
           comprehensive skill set to contribute to end-to-end development
-          projects. My goal is to further enhance my capabilities as a Front End
-          Developer, gain valuable experience, and deliver top-tier performance.
+          projects. My goal is to further enhance my capabilities as a web Developer,
+          gain valuable experience, and deliver top-tier performance.
         </p>
       </div>
     </section>
