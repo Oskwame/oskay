@@ -6,11 +6,14 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'res.cloudinary.com',
-        pathname: '/dnrygejqn/**', // Replace 'dnrygejqn' with your actual Cloudinary cloud name
+        pathname: '/dnrygejqn/**', // ' your actual Cloudinary cloud name
       },
     ],
   },
+  experimental: {
+    //    appDir: true, // Enable the `app` directory
+  },
+  reactStrictMode: true, // Enable React strict mode
 };
 
 export default nextConfig;
-  

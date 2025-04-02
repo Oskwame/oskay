@@ -28,6 +28,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
       <head>
+        
         <meta name="google-site-verification" content={metadata.other["google-site-verification"]} />
         <meta name="description" content={metadata.openGraph.description} />
         <meta name="keywords" content={metadata.keywords} />
