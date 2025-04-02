@@ -1,6 +1,4 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
+export async function GET() {
     const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://oskwame.vercel.app";
   
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -12,7 +10,11 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
         </url>
       </urlset>`;
   
-    res.setHeader("Content-Type", "text/xml");
-    res.status(200).send(sitemap);
+    return new Response(sitemap, {
+      headers: {
+        "Content-Type": "application/xml",
+      },
+    });
   }
+  
   
