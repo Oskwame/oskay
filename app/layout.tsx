@@ -16,7 +16,7 @@ export const metadata = {
   keywords:
     "Os Kwame, portfolio, web development, javascript, software engineer, front-end developer, programmer, build website, full-stack developer",
   other: {
-    "google-site-verification": "5h_fxDHUh6JkklaZ3kxpQOyQptUyG8XVzcAIdF8v1C8",
+    "": "",
   },
 };
 
@@ -28,7 +28,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
       <head>
-        
+
         <meta name="google-site-verification" content={metadata.other["google-site-verification"]} />
         <meta name="description" content={metadata.openGraph.description} />
         <meta name="keywords" content={metadata.keywords} />
