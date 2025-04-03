@@ -1,12 +1,12 @@
-import type { MetadataRoute } from "next";
-
+import type { MetadataRoute } from 'next'
+ 
 export default function robots(): MetadataRoute.Robots {
-return{
-    rules:{
-        userAgent:"*",
-        allow:"/",
-        disallow:"/private/"
+  return {
+    rules: {
+      userAgent: '*',
+      allow: '/',
+      disallow: '/private/',
     },
-    sitemap:"https://oskwame.versel.app/sitemap.xml",
+    sitemap:"https://oskwame.vercel.app/sitemap.xml",
 }
 }
