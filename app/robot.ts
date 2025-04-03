@@ -1,15 +1,12 @@
-import { NextApiRequest, NextApiResponse } from "next";
-
-export default function handler(req: NextApiRequest, res: NextApiResponse) {
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://oskwame.vercel.app";
-  
-    const robotsTxt = `User-agent: *
+export async function GET() {
+    const robots = `User-agent: *
   Allow: /
-  disallow: {}
+  Sitemap: https://oskwame.vercel.app/sitemap.xml`;
   
-  Sitemap: ${baseUrl}/sitemap.xml`;
-  
-    res.setHeader("Content-Type", "text/plain");
-    res.status(200).send(robotsTxt);
+    return new Response(robots, {
+      headers: {
+        "Content-Type": "text/plain",
+      },
+    });
   }
   
