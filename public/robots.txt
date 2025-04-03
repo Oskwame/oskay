@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://oskwame.vercel.app/api/sitemap

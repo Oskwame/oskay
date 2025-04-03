@@ -15,9 +15,7 @@ export const metadata = {
   },
   keywords:
     "Os Kwame, portfolio, web development, javascript, software engineer, front-end developer, programmer, build website, full-stack developer",
-  other: {
-    "": "",
-  },
+  
 };
 
 interface RootLayoutProps {
