@@ -1,6 +1,7 @@
 "use client";
 
 import React, { ReactNode } from "react";
+import { motion } from "framer-motion"; 
 import { FaHtml5, FaCss3, FaNodeJs, FaStar } from "react-icons/fa";
 import { AiOutlineJavaScript } from "react-icons/ai";
 import { RiTailwindCssLine, RiReactjsLine, RiNextjsLine, RiSupabaseLine } from "react-icons/ri";
@@ -16,7 +17,13 @@ const SkillsSection: React.FC = () => {
 
       <div className="grid lg:grid-cols-2 gap-6 md:gap-10">
         {/* Frontend Section */}
-        <div className="bg-gradient-to-r from-gray-300 to-gray-200 p-4 sm:p-6 md:p-8 rounded-2xl shadow-md hover:bg-transparent hover:border hover:border-gray-300 transition-all duration-300">
+        <motion.div
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ type: "spring", stiffness: 200, damping: 20 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-r from-gray-300 to-gray-200 p-4 sm:p-6 md:p-8 rounded-2xl shadow-md hover:bg-transparent hover:border hover:border-gray-300 transition-all duration-300"
+        >
           <h3 className="text-center text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 text-gray-800">
             Frontend Development
           </h3>
@@ -30,7 +37,7 @@ const SkillsSection: React.FC = () => {
             />
             <SkillItem
               icon={<RiTailwindCssLine className="text-4xl sm:text-5xl text-blue-400" />}
-              stars={3}
+              stars={4}
               level="Intermediate"
             />
             <SkillItem
@@ -39,10 +46,16 @@ const SkillsSection: React.FC = () => {
               level="Intermediate"
             />
           </div>
-        </div>
+        </motion.div>
 
         {/* Backend Section */}
-        <div className="bg-gradient-to-r from-gray-300 to-gray-200 p-4 sm:p-6 md:p-8 rounded-2xl shadow-md hover:bg-transparent hover:border hover:border-gray-300 transition-all duration-300">
+        <motion.div
+          initial={{ x: 200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ type: "spring", stiffness: 200, damping: 20 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-r from-gray-300 to-gray-200 p-4 sm:p-6 md:p-8 rounded-2xl shadow-md hover:bg-transparent hover:border hover:border-gray-300 transition-all duration-300"
+        >
           <h3 className="text-center text-lg sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 text-gray-800">
             Backend Development
           </h3>
@@ -55,8 +68,8 @@ const SkillsSection: React.FC = () => {
             />
             <SkillItem
               icon={<RiSupabaseLine className="text-4xl sm:text-5xl text-green-600" />}
-              stars={3}
-              level="Intermediate"
+              stars={5}
+              level="Experienced"
             />
             <SkillItem
               icon={<BiLogoPostgresql className="text-4xl sm:text-5xl text-blue-500" />}
@@ -64,7 +77,7 @@ const SkillsSection: React.FC = () => {
               level="Beginner"
             />
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
@@ -95,3 +108,4 @@ const SkillItem: React.FC<SkillItemProps> = ({ icon, stars, level }) => {
 };
 
 export default SkillsSection;
+

@@ -46,7 +46,7 @@ const services = [
 const Service = () => {
   return (
     <section
-      id="service"
+      id="services"
       className="container mx-auto px-6 sm:px-10 md:px-16 lg:px-20 py-10"
     >
       {/* Section Title */}
