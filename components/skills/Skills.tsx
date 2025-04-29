@@ -18,9 +18,9 @@ const SkillsSection: React.FC = () => {
       <div className="grid lg:grid-cols-2 gap-6 md:gap-10">
         {/* Frontend Section */}
         <motion.div
-          initial={{ x: -200, opacity: 0 }}
+          initial={{ x: 100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 200, damping: 20 }}
+          transition={{ type: "spring", stiffness: 50 }}
           viewport={{ once: true }}
           className="bg-gradient-to-r from-gray-300 to-gray-200 p-4 sm:p-6 md:p-8 rounded-2xl shadow-md hover:bg-transparent hover:border hover:border-gray-300 transition-all duration-300"
         >
@@ -50,9 +50,9 @@ const SkillsSection: React.FC = () => {
 
         {/* Backend Section */}
         <motion.div
-          initial={{ x: 200, opacity: 0 }}
+          initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 200, damping: 20 }}
+          transition={{ type: "spring", stiffness: 50}}
           viewport={{ once: true }}
           className="bg-gradient-to-r from-gray-300 to-gray-200 p-4 sm:p-6 md:p-8 rounded-2xl shadow-md hover:bg-transparent hover:border hover:border-gray-300 transition-all duration-300"
         >
