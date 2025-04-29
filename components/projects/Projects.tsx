@@ -77,6 +77,7 @@ const Projects: React.FC = () => {
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4,delay:0.1 }}
+      drag="x"
       dragConstraints={{ left: 0, right: 0 }}
       onDragEnd={(e, { offset }) => handleSwipe(offset.x)}
     >
