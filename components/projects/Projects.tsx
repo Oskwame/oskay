@@ -20,21 +20,21 @@ const projects: Project[] = [
   },
   {
     title: 'Student Project Management System',
-    description: 'A platform that houses student projects by faculty for easy access to ideas and docs.',
+    description: 'A platform that houses student projects based on their faculty for easy access to ideas and docs.',
     link: 'https://example.com',
-    image: 'https://via.placeholder.com/300',
+    image: 'https://res.cloudinary.com/dnrygejqn/image/upload/v1745932397/photo_2025-04-29_01-12-07_lk9k9p.jpg',
   },
   {
-    title: 'Project 3',
-    description: 'A brief description of project 3.',
+    title: 'Apoointmemnt booking Admin dashboard',
+    description: 'A dashboard for managing services, appointments and patient data for Kasa hospital',
     link: 'https://example.com',
-    image: 'https://via.placeholder.com/300',
+    image: 'https://res.cloudinary.com/dnrygejqn/image/upload/v1745939946/Screenshot_31_corvpp.png',
   },
   {
-    title: 'Project 4',
-    description: 'Another project for showcasing purposes.',
+    title: 'Infite Tech Solutions',
+    description: 'UX design and develolpment for a tech solution company with website still uder construction',
     link: 'https://example.com',
-    image: 'https://via.placeholder.com/300',
+    image: 'https://res.cloudinary.com/dnrygejqn/image/upload/v1745940869/Screenshot_33_cvr7ol.png',
   },
 ];
 
@@ -73,12 +73,10 @@ const Projects: React.FC = () => {
   <AnimatePresence initial={false}>
     <motion.div
       key={mobileCurrent}
-      className=""
-      initial={{ opacity: 0, x: 100 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -100 }}
-      transition={{ duration: 0.4 }}
-      drag="x"
+      className="bg-[#f5f5f5] rounded-lg shadow-lg overflow-hidden text-black"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4,delay:0.1 }}
       dragConstraints={{ left: 0, right: 0 }}
       onDragEnd={(e, { offset }) => handleSwipe(offset.x)}
     >
