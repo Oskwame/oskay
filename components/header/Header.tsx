@@ -44,11 +44,10 @@ function Header() {
         </a>
       </div>
 
-      <div className="md:mr-[10%] lg:mr-0 lg:ml-[10%]">
-        <div className="w-60 h-60 lg:w-72 lg:h-72 rounded-full bg-white border-2 border-blue-400 overflow-hidden mt-8 lg:mt-0">
-          <Image
+      <div className="md:mr-[10%] lg:mr-0 lg:ml-[10%] animate-drop-in-bounce">
+      <div className="w-60 h-60 lg:w-72 lg:h-72 rounded-full bg-white border-2 border-blue-400 overflow-hidden mt-8 lg:mt-0 animate-glow-border">          <Image
             className="w-full h-full object-cover"
-            src="https://res.cloudinary.com/dnrygejqn/image/upload/v1735751434/Profile_yotgme.png"
+            src="https://res.cloudinary.com/dnrygejqn/image/upload/v1747974871/photo_2025-05-22_16-33-28_uqmxmg.jpg"
             alt="Profile image"
             width={288}
             height={288}
@@ -61,3 +60,5 @@ function Header() {
 }
 
 export default Header;
+
+

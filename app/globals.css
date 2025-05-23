@@ -17,3 +17,46 @@ body {
   width: 100%; /* Ensure body spans the full viewport */
 }
 
+@layer utilities {
+  @keyframes glow-border {
+    0% {
+      box-shadow: 0 0 10px #4ECDC4, 0 0 20px #349090;
+    }
+    100% {
+      box-shadow: 0 0 20px #4ECDC4, 0 0 40px #349090;
+    }
+  }
+
+  .animate-glow-border {
+    animation: glow-border 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes drop-in-bounce {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    65% {
+      transform: translateY(-20px);
+    }
+    80% {
+      transform: translateY(0);
+    }
+    90% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .animate-drop-in-bounce {
+    animation: drop-in-bounce 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+  }
+}
+
+
